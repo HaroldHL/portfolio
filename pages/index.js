@@ -57,12 +57,13 @@ export default function Home() {
   const selected = experiences[selectedIndex];
 
   // Handling Scroll
-  const handleWorkScroll = () => {
-    window.scrollTo({
-      top: workRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/resume.pdf";
+    link.download = "Harold-Yin-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleAboutScroll = () => {
@@ -93,6 +94,7 @@ export default function Home() {
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
       {data.showCursor && <Cursor />}
       <Head>
+          <link rel="icon" href="/favicon.ico" />
         <title>{data.name}</title>
       </Head>
 
@@ -101,7 +103,7 @@ export default function Home() {
 
       <div className="container mx-auto mb-10">
         <Header
-          handleWorkScroll={handleWorkScroll}
+          handleDownload={handleDownload}
           handleAboutScroll={handleAboutScroll}
           handleExperienceScoll={handleExperienceScoll}
         />
