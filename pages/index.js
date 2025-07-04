@@ -138,7 +138,7 @@ export default function Home() {
                   {/* 左侧卡片 */}
                   <div className="laptop:w-2/3 w-full p-4 laptop:ml-20 bg-gray-100 rounded-2xl shadow-md">
                     <div className="flex  justify-between">
-                      <h3 className="text-xl font-semibold mb-2">{selected.company}</h3>
+                      <h3 className="text-xl text-base text-gray-700 font-semibold mb-2">{selected.company}</h3>
                       <a
                       href={selected.website}
                       target="_blank"
@@ -165,7 +165,7 @@ export default function Home() {
                         }`}
                       >
                         <p className="text-sm text-gray-500">{exp.time}</p>
-                        <p className="text-lg font-medium">{exp.company}</p>
+                        <p className="text-base text-gray-700 text-lg font-medium">{exp.company}</p>
                         <p className="text-sm text-gray-600">
                           {exp.title}
                         </p>
