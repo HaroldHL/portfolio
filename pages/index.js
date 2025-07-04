@@ -116,10 +116,10 @@ export default function Home() {
 
         <div className="mt-3  laptop:ml-20 p-2 laptop:p-0" ref={aboutRef}>
           <p ref={textOne} className="tablet:m-5 mt-2 text-xl laptop:text-xl w-full laptop:w-4/5">
-            Hi 👋, I'm Harold — a software engineer with 6 years of experience building real-world products across Australia, the U.S., and China.  I’ve worked in fast-paced startups, a specialised EHS SaaS company, and larger internet firms, wearing different hats and always staying hands-on. 
+            Hi 👋, I&apos;m Harold — a software engineer with 6 years of experience building real-world products across Australia, the U.S., and China.  I&apos;ve worked in fast-paced startups, a specialised EHS SaaS company, and larger internet firms, wearing different hats and always staying hands-on. 
           </p>
-          <p  ref={textTwo} className="tablet:m-5 mt-2 text-xl laptop:text-xl w-full laptop:w-4/5">I’m a results-focused team player with strong self-drive. I care about building software that’s not just functional, but genuinely useful, intuitive, and grounded in real user needs — delivered with clarity, craft, and care.</p>
-          <p ref={textThree} className="tablet:m-5  text-xl laptop:text-xl w-full laptop:w-4/5">I'm currently based in Sydney, NSW 🇦🇺, open to new opportunities across Australia (or remote) where I can contribute meaningfully and keep growing with great people.</p>
+          <p  ref={textTwo} className="tablet:m-5 mt-2 text-xl laptop:text-xl w-full laptop:w-4/5">I&apos;m a results-focused team player with strong self-drive. I care about building software that&apos;s not just functional, but genuinely useful, intuitive, and grounded in real user needs — delivered with clarity, craft, and care.</p>
+          <p ref={textThree} className="tablet:m-5  text-xl laptop:text-xl w-full laptop:w-4/5">I&apos;m currently based in Sydney, NSW 🇦🇺, open to new opportunities across Australia (or remote) where I can contribute meaningfully and keep growing with great people.</p>
         </div>
         </div>
 
