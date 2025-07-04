@@ -113,15 +113,15 @@ export default function Home() {
             <img className="w-full h-80 rounded-md" src="images/profile.JPG"></img>
           </div>
 
-          <Socials className="mt-2  laptop:ml-20 ml:10 laptop:mt-5" />
+          <Socials className="mt-2  laptop:ml-20 ml:10 laptop:mt-5" showEmail={true}/>
         </div>
 
-        <div className="mt-3  laptop:ml-20 p-2 laptop:p-0" ref={aboutRef}>
+        <div className="mt-3 ml-6 laptop:ml-20 p-2 laptop:p-0" ref={aboutRef}>
           <p ref={textOne} className="tablet:m-5 mt-2 text-xl laptop:text-xl w-full laptop:w-4/5">
             Hi 👋, I&apos;m Harold — a software engineer with 6 years of experience building real-world products across Australia, the U.S., and China.  I&apos;ve worked in fast-paced startups, a specialised EHS SaaS company, and larger internet firms, wearing different hats and always staying hands-on. 
           </p>
           <p  ref={textTwo} className="tablet:m-5 mt-2 text-xl laptop:text-xl w-full laptop:w-4/5">I&apos;m a results-focused team player with strong self-drive. I care about building software that&apos;s not just functional, but genuinely useful, intuitive, and grounded in real user needs — delivered with clarity, craft, and care.</p>
-          <p ref={textThree} className="tablet:m-5  text-xl laptop:text-xl w-full laptop:w-4/5">I&apos;m currently based in Sydney, NSW 🇦🇺, open to new opportunities across Australia (or remote) where I can contribute meaningfully and keep growing with great people.</p>
+          <p  ref={textThree} className="tablet:m-5  text-xl laptop:text-xl w-full laptop:w-4/5">I&apos;m currently based in Sydney, NSW 🇦🇺, open to new opportunities across Australia (or remote) where I can contribute meaningfully and keep growing with great people.</p>
         </div>
         </div>
 
@@ -164,11 +164,11 @@ export default function Home() {
                           selectedIndex === idx ? "border-black bg-gray-50" : "border-gray-300"
                         }`}
                       >
-                        <div className="text-sm text-gray-500">{exp.time}</div>
-                        <div className="text-lg font-medium">{exp.company}</div>
-                        <div className="text-sm text-gray-600">
+                        <p className="text-sm text-gray-500">{exp.time}</p>
+                        <p className="text-lg font-medium">{exp.company}</p>
+                        <p className="text-sm text-gray-600">
                           {exp.title}
-                        </div>
+                        </p>
                         {exp.extraTitle !== "" && (
                           <div className="text-sm text-gray-600">
                           &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|

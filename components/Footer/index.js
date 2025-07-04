@@ -11,13 +11,13 @@ const Footer = ({}) => {
         <div>
           <h1 className="text-2xl text-bold">Contact.</h1>
           <div className="mt-10">
-            <div className="flex items-center justify-between">
-              <div className="text-xl flex flex-col">
+            <div className="laptop:flex items-center justify-between">
+              <div className="laptop:text-xl flex flex-col">
                 <h2>Harold Yin</h2>
                 <div>NSW, Australia</div>
               </div>
               <div className="">
-              <Socials showTel={true}/>
+              <Socials showTel={true} showEmail={false}/>
               </div>
             </div>
             
