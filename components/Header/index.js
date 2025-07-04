@@ -6,7 +6,7 @@ import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
-const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
+const Header = ({ handleWorkScroll, handleAboutScroll, handleExperienceScoll, isBlog }) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -76,9 +76,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
                   {showResume && (
                     <Button
-                      onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
-                      }
+                      onClick={handleExperienceScoll}
                     >
                       Experience
                     </Button>
@@ -100,7 +98,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
                   {showResume && (
                     <Button
-                      onClick={() => router.push("/resume")}
+                      onClick={handleExperienceScoll}
                       classes="first:ml-1"
                     >
                       Experience
@@ -134,7 +132,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             <Button onClick={handleAboutScroll}>About</Button>
             {showResume && (
               <Button
-                onClick={() => router.push("/resume")}
+                onClick={handleExperienceScoll}
                 classes="first:ml-1"
               >
                 Experience
