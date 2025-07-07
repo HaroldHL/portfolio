@@ -26,6 +26,7 @@ export default function Home() {
       time: "2021.4 — 2025.5",
       extraTitle: "",
       about: "Trip.com Group Limited is a leading global one-stop travel platform, integrating a comprehensive suite of travel products and services and differentiated travel content. It is the go-to destination for many travelers in Asia, and increasingly for travelers around the world, to explore travel, get inspired, make informed and cost-effective travel bookings, enjoy hassle-free on-the-go support, and share travel experience. Founded in 1999 and listed on NASDAQ in 2003 and HKEX in 2021, the Company currently operates under a portfolio of brands, including Ctrip, Qunar, Trip.com and Skyscanner, with the mission \"to pursue the perfect trip for a better world\".",
+      me: "During my four years at Trip.com Group, I focused on growing user-generated content across both local and international markets. I worked on enhancing content visibility, improving user experience, and supporting platform scalability — contributing to sustained growth in organic engagement and global reach.",
       website: "https://group.trip.com/",
     },
     {
@@ -34,14 +35,16 @@ export default function Home() {
       extraTitle: "Associate Product Developer",
       time: "2019.6 — 2021.4",
       about: "Benchmark Gensuite® is a leading provider of cloud-based software solutions for Environmental, Health, and Safety (EHS), Sustainability, Quality, and Environmental, Social, and Governance (ESG) management. With a foundation rooted in over 25 years of domain expertise, the company delivers a unified digital platform designed to help organisations enhance compliance, reduce operational risks, and drive sustainable performance. Headquartered in Mason, Ohio, Benchmark Gensuite® serves a diverse range of industries, including aerospace, automotive, manufacturing, energy, and chemicals. Its platform integrates a comprehensive suite of applications covering incident management, regulatory compliance, auditing, operational safety, and quality control. This holistic approach enables organisations to manage their EHS and ESG responsibilities effectively across global operations. ",
+      me: "At Benchmark Gensuite, I grew from an Associate Product Developer to a Product Developer — a journey that shaped my foundation as a well-rounded software engineer. I started with maintaining and iterating on enterprise software, gradually taking on engineering design and leading agile development projects. Through this experience, I gained a global perspective and a deeper understanding of B2B product development and delivery.",
       website: "https://benchmarkgensuite.com/",
     },
     {
       company: "Prosper Education",
-      title: "Web Developer (Intern)",
+      title: "Web Developer (Internship)",
       time: "2018.8 — 2019.4",
       extraTitle: "",
       about: "Prosper Education is a British education company creating the world’s best learning experiences for young children around the globe. We deliver an entire learning ecosystem teaching English and 21st Century skills. RoyalABC™ supports teachers in the classroom and parents at home to ensure that each child develops the essential skills to thrive and compete in the future global economy.",
+      me: "As an intern, I worked with teams in both Sydney and China to support product integration, backend development, and CRM operations. The experience gave me valuable exposure to cross-regional collaboration and practical communication within a global business environment.",
       website: "https://royalabc.com/gb/"
     },
   ];
@@ -151,6 +154,7 @@ export default function Home() {
                     
                       </div>
                     <p className="text-base text-gray-700">{selected.about}</p>
+                    <p className="text-base text-gray-700">{selected.me}</p>
                   </div>
 
                   {/* 右侧经历列表 */}
